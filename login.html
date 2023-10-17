@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Maiden Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.XYZ/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-------------------- navbar ----------------------->
+    <nav class="navbar navbar-expand-lg navbar-light header-container">
+      <a class="navbar-brand mx-5" href="/index.html">
+        <img src="./imges/wordmark.svg" alt="logo" style="width:200px;height: 27px;">
+        <div class="line"></div>
+        <div class="line"></div>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" id="ul-form">
+          <li class="nav-item"><a class="nav-link mx-3" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="./products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link mx-3" href="#">About Us</a></li>
+        </ul>
+      </div>
+      <form class="form-inline my-1 justify-content-between">
+        <ul id="user_info" class="mx-3">
+          <li class="shopping_cart mx-2 d-flex">
+            <i class="fa-solid fa-heart mx-2" id="fav-icon"></i>
+            <div id="cart-shoping">
+                  <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                  <span class="badge"></span>
+            </div>
+          </li>
+          <div class="dropdown mr-4 text-center mt-2">
+            <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-user"></i>
+            </button>
+            <ul class="dropdown-menu bg-light" aria-labelledby="dropdownMenuButton1" id="drop-menu">
+              <li><a class="dropdown-item" href="#" id="user-name"></a></li>
+              <li><a class="dropdown-item" href="#">your profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#" id="logout">log out</a></li>
+            </ul>
+          </div>
+        </ul>
+        <ul class="d-flex" id="links">
+          <li><a href="login.html" class="btn mt-3 mx-1" id="register-icon">Login</a></li>
+          <li><a href="signup.html" class="btn mt-3 mx-1" id="register-icon">Sign Up</a></li>
+        </ul>
+      </form>
+    </nav>
+    <!-------------------- main ----------------------->
+    <main>
+      <form class="container p-4 text-center" id="register-form">
+        <h3 class="register-header">Login User</h3>
+        <div class="mb-3">
+          <input type="email" class="form-control p-md-4" id="email" placeholder="Email">
+        </div>
+        <div class="mb-3">
+          <input type="password" class="form-control p-md-4" id="password" placeholder="Password">
+        </div>
+        <a href="/index.html" class="forget-password">Forgot your password?</a>
+        <input type="submit" value="Sign In" id="sign_in" class="btn">
+        <a href="/signup.html" class="create-account">Create account</a>
+      </form>
+    </main>
+
+  <script src="https://cdn.jsdelivr.XYZ/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.XYZ/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.XYZ/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
+

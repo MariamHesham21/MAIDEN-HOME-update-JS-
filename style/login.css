@@ -1,0 +1,55 @@
+#register-form{
+    background: -webkit-linear-gradient(top right,#7b8fa18b,#E3F4F4,#eee2debd,#faf0e4e1);
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.register-header{
+    color: rgb(61, 89, 124);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif ;
+    margin: 15px 0;
+}
+#register-form input[type="email"],input[type="password"],input[type="text"]{
+    width:68%;
+    margin: 4px auto;
+    font-size: 18px;
+}
+#register-form .forget-password{
+    width: 70%;
+    color: rgb(61, 89, 124);
+    margin: 10px auto;
+    text-align: start;
+}
+#register-form input[type="submit"]{
+    width:28%;
+    margin: 10px auto;
+    padding:6px;
+    font-size:20px;
+    background-color: rgb(61, 89, 124);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+}
+#register-form .create-account{
+    color: rgb(61, 89, 124);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+} 
+@media screen and (max-width: 768px){
+    #register-form{
+        width:80%;
+    }
+    #register-form input[type="email"],input[type="password"],input[type="text"]{
+        width:100%;
+    }
+    #register-form .forget-password{
+        width: 100%;
+    }
+    #register-form input[type="submit"]{
+        width:70%;
+    }
+}
